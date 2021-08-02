@@ -35,7 +35,7 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "vueformulate/rule-name": 2
+        "vueformulate/required-type": 2
     }
 }
 ```
