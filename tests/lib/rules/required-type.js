@@ -37,6 +37,11 @@ ruleTester.run("required-type", rule, {
       code: '<template><div><FormulateInput :type="demo"></FormulateInput></div></template>',
       options: ['always']
     },
+    {
+      filename: 'test.vue',
+      code: '<template><div><FormulateInput :type="\'demo\'"></FormulateInput></div></template>',
+      options: ['always']
+    },
   ],
   invalid: [
     {
