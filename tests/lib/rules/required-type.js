@@ -40,7 +40,7 @@ ruleTester.run("required-type", rule, {
       options: ['always'],
       errors: [
         {
-          message: "formulate-input need have type prop",
+          message: "formulate-input type prop is required",
           type: 'VElement',
           line: 1
         }
@@ -52,7 +52,7 @@ ruleTester.run("required-type", rule, {
       options: ['always'],
       errors: [
         {
-          message: "formulate-input need have type prop",
+          message: "formulate-input type prop is required",
           type: 'VElement',
           line: 1
         }
@@ -64,7 +64,19 @@ ruleTester.run("required-type", rule, {
       options: ['always'],
       errors: [
         {
-          message: "formulate-input need have type prop",
+          message: "formulate-input type prop is required",
+          type: 'VElement',
+          line: 1
+        }
+      ]
+    },
+    {
+      filename: 'test.vue',
+      code: '<template><div><FormulateInput type=""></FormulateInput></div></template>',
+      options: ['always'],
+      errors: [
+        {
+          message: "formulate-input type prop value is required",
           type: 'VElement',
           line: 1
         }

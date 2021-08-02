@@ -1,13 +1,13 @@
 {
   "name": "eslint-plugin-vueformulate",
-  "version": "0.0.0",
+  "version": "0.1.1",
   "description": "vueformulate",
   "keywords": [
     "eslint",
     "eslintplugin",
     "eslint-plugin"
   ],
-  "author": "vueformulate",
+  "author": "tu6ge",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha tests --recursive"
