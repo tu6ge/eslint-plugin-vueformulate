@@ -32,6 +32,11 @@ ruleTester.run("required-type", rule, {
       code: '<template><div><FormulateInput type="demo"></FormulateInput></div></template>',
       options: ['always']
     },
+    {
+      filename: 'test.vue',
+      code: '<template><div><FormulateInput :type="demo"></FormulateInput></div></template>',
+      options: ['always']
+    },
   ],
   invalid: [
     {
@@ -41,7 +46,7 @@ ruleTester.run("required-type", rule, {
       errors: [
         {
           message: "formulate-input type prop is required",
-          type: 'VElement',
+          type: 'VStartTag',
           line: 1
         }
       ]
@@ -53,7 +58,7 @@ ruleTester.run("required-type", rule, {
       errors: [
         {
           message: "formulate-input type prop is required",
-          type: 'VElement',
+          type: 'VStartTag',
           line: 1
         }
       ]
@@ -65,7 +70,7 @@ ruleTester.run("required-type", rule, {
       errors: [
         {
           message: "formulate-input type prop is required",
-          type: 'VElement',
+          type: 'VStartTag',
           line: 1
         }
       ]
@@ -77,7 +82,7 @@ ruleTester.run("required-type", rule, {
       errors: [
         {
           message: "formulate-input type prop value is required",
-          type: 'VElement',
+          type: 'VStartTag',
           line: 1
         }
       ]
@@ -89,7 +94,19 @@ ruleTester.run("required-type", rule, {
       errors: [
         {
           message: "formulate-input type prop is required",
-          type: 'VElement',
+          type: 'VStartTag',
+          line: 1
+        }
+      ]
+    },
+    {
+      filename: 'test.vue',
+      code: '<template><div><formulate-input :type=""></formulate-input></div></template>',
+      options: ['always'],
+      errors: [
+        {
+          message: "formulate-input type prop value is required",
+          type: 'VStartTag',
           line: 1
         }
       ]
