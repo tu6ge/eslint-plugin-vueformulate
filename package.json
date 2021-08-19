@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-vueformulate",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "vueformulate",
   "keywords": [
     "eslint",
@@ -23,5 +23,5 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "license": "ISC"
+  "license": "MIT"
 }
